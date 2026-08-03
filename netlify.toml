@@ -1,0 +1,18 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/fires"
+  to = "/.netlify/functions/fires"
+  status = 200
+
+[[redirects]]
+  from = "/api/weather"
+  to = "/.netlify/functions/weather"
+  status = 200
+
+[[redirects]]
+  from = "/api/aircraft"
+  to = "/.netlify/functions/aircraft"
+  status = 200
